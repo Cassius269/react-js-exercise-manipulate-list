@@ -1,0 +1,20 @@
+footer {
+    background-color: rgb(218, 111, 36);
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    li {
+    line-height: 25px;
+}
+}
+
+a {
+    color: white;
+    text-decoration: none; /* enlever le surlignage */
+}
+
+.test {
+    color:rgb(181, 226, 241);
+}

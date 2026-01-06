@@ -1,0 +1,25 @@
+#divAllNotifications {
+    position: absolute;
+    top: 75px;
+    right: 40px;
+
+    .divNotification {
+        width: 206px;
+        border: 1px solid;
+        padding: 1rem;
+        border-radius: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+
+        h3 {
+            display: flex;
+            align-items: end;
+        }
+
+        #divButtonExit{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1rem;
+        }
+    }
+}
