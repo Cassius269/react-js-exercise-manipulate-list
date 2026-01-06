@@ -9,7 +9,7 @@ function App() {
       <Header />
       <main className='container'>
           <h1>Bienvenu(e)</h1>
-          <PhotoGalery />
+          <PhotoGalery filterTag="fleur" filterDate='2025-12'/>
       </main>
       <Footer />    
     </>
