@@ -1,14 +1,11 @@
-import styles from '../assets/styles/layouts/Photo.module.scss';
+// import styles from '../assets/styles/layouts/Photo.module.scss';
 
 export default function Photo({name, imageUrl, tags = [], date = null}){
 
-    let listTags;
     const dateObject = new Date(date);
 
-    if(tags.length > 0 ){
-        listTags = tags.map(t => <a href="#" className='btn btn-outline-danger'><li className=''>{t}</li></a>); // mettre les tags dans une liste
-    }
-
+    const listTags = tags.length > 0 ? tags.map(t => <li key={t} className=''><a href="#" className='btn btn-outline-danger'>{t}</a></li>) : null; // mettre le(s) tag(s) dans une liste si existant(s)
+ 
 
     return (
         <article className='card bg-secondary-subtle col-10 col-md-5 col-lg-5 col-xl-3 m-auto mb-4'>
@@ -17,7 +14,7 @@ export default function Photo({name, imageUrl, tags = [], date = null}){
             <div className='card-body'>
                 <h3 className='text-start'>{capitalizeFirstLetter(name)}</h3>
                 <ul className='d-flex justify-content-end gap-2'>
-                    {listTags ? listTags : null}
+                    {listTags}
                 </ul>
                 <p>Date de parution: {date ? dateObject.toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' }) : "date de publication inconnue"}</p>
             </div>

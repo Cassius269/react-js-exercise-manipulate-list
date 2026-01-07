@@ -9,7 +9,8 @@ function App() {
       <Header />
       <main className='container'>
           <h1>Bienvenu(e)</h1>
-          <PhotoGalery filterTag="fleur" filterDate='2025-12'/>
+          {/* Utilisation du composant Photogalery avec le filtre par défaut des tags des images datant avant décembre 2025*/}
+          <PhotoGalery filterTag="tous" filterDate='2025-12'/>
       </main>
       <Footer />    
     </>
